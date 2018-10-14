@@ -1,0 +1,6 @@
+S -> aA | cC | bA | bC | &
+Z -> aA | cC | bA | bC
+A -> bS | cD | b | c
+C -> bS | aE | b | a
+D -> aA | bA | bC
+E -> cC | bC | bA

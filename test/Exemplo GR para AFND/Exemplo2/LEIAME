@@ -1,0 +1,6 @@
+Este exemplo é o exercício 6)b) da lista de linguagens regulares.
+O arquivo gr-para-afnd2 é a gramática regular a ser convertida para um afnd.
+O arquivo afnd2 é esta gramática convertida.
+
+Uso:
+java -jar trabalho.jar -g2a -i gr-para-afnd2 -o afnd2

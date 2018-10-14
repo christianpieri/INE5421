@@ -1,0 +1,8 @@
+Este exemplo é o exercício é o mesmo exercício que foi dado na última questão da P1 deste semestre.
+A linguagem era números binários começando e terminando com o mesmo simbolo.
+
+Portanto, o AF descrito no arquivo afd-para-gr é o AF que representa esta linguagem.
+O arquivo de saída foi chamado de GR, que é a gramática regular resultante do AF convertido.
+
+Uso:
+java -jar trabalho.jar -a2g -i afd-para-gr -o gr

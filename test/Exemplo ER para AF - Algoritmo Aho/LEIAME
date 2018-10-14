@@ -1,0 +1,10 @@
+Este exemplo é o primeiro exemplo feito em sala pela professora.
+A expressão regular é a seguinte: (a | b)*abb.
+Lembrando que nossa notação de "or", não é o pipe "|", e sim o mais "+"; dessa forma:
+(a+b)*abb.
+
+O arquivo er1-entrada contém o a ER descrita acima.
+O arquivo er1ToAf-saida contém o AF final destino.
+
+Uso:
+java -jar trabalho.jar -e2a -i er1-entrada -o er1ToAf

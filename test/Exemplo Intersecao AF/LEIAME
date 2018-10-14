@@ -1,0 +1,11 @@
+Este exemplo é a intersecção do AF da questão 1)b) da lista de linguagens regulares
+com o AF 1)d) da mesma lista.
+
+O AF 1)b) representa a linguagem dos binários divisíveis por 3.
+O AF 1)d) representa a linguagem dos binários divisíveis por 3 impares.
+
+Os arquivos para ser feito a intersecção são af-binario-div-3 e af-binario-div3-impar
+O arquivo de saída foi chamado de interseccao
+
+Uso:
+java -jar trabalho.jar -aia -i af-binario-div-3 af-binario-div3-impar -o interseccao

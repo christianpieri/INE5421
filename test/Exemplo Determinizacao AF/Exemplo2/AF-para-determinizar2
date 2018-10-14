@@ -1,0 +1,4 @@
+	a	b	c	&
+>p	-	q	r	{p,q}
+q	p	r	{p,q}	-
+*r	-	-	-	-

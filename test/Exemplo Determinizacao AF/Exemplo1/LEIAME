@@ -1,0 +1,6 @@
+Este exemplo é o exercício 4)a) da lista de linguagens regulares.
+O arquivo AF-para-determinizar contém o AF original da questão.
+O arquivo AF-determinizado contém a resposta.
+
+Uso:
+java -jar trabalho.jar -d -i AF-para-determinizar -o AF-determinizado

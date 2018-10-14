@@ -1,0 +1,8 @@
+Este exemplo é o exercício 4)b) da lista de linguagens regulares.
+O arquivo AF-para-determinizar2 contém o AF original da questão.
+O arquivo AF-determinizado2 contém a resposta.
+
+Uso:
+java -jar trabalho.jar -d -i AF-para-determinizar2 -o AF-determinizado2
+
+Lembrando que se houver não-determinismo porque um estado leva a dois estados diferentes por um mesmo terminal, fazer uso da notação "{}", da forma exemplo: {q0, q1}.

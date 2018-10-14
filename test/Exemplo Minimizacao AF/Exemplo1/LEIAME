@@ -1,0 +1,6 @@
+Este exemplo foi dado em sala dia 16/08 para minimização.
+O arquivo AF-para-minimizar é o AF original para ser minimizado.
+O arquivo AF-minimizado contém o AF mínimo.
+
+Uso:
+java -jar trabalho.jar -m -i AF-para-minimizar -o AF-minimizado
