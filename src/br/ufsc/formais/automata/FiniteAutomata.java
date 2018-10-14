@@ -186,13 +186,15 @@ public class FiniteAutomata {
     private void buildMinimized(Set<Symbol> symbols, Set<Set<State>> classes) {
         var newStates = new HashMap<Set<State>, State>();
         var newFinalStates = new HashSet<State>();
-        var newTransitionTable = new HashMap<State, Map<Symbol, Set<State>>>();
+        var newTransitionTable = new TreeMap<State, Map<Symbol, Set<State>>>();
         State newInitialState = null;
-        int id = 0;
+        int id = 1;
         for (var clazz : classes) {
-            newStates.put(clazz, new State(id, "q" + id++));
             if (newInitialState == null && clazz.contains(this.initialState)) {
+                newStates.put(clazz, new State(0, "q0"));
                 newInitialState = newStates.get(clazz);
+            }else{
+                newStates.put(clazz, new State(id, "q"+id++));
             }
             if (this.finalStates.contains(clazz.iterator().next())) {
                 newFinalStates.add(newStates.get(clazz));
@@ -451,8 +453,8 @@ public class FiniteAutomata {
 
     private static State parseState(String part, Boolean[] isInitialIsFinal, Map<String, State> states) {
         String cleanLine = part.trim();
-        isInitialIsFinal[0] = cleanLine.startsWith(">");
-        isInitialIsFinal[1] = cleanLine.startsWith("*");
+        isInitialIsFinal[0] = cleanLine.contains(">");
+        isInitialIsFinal[1] = cleanLine.contains("*");
 
         if (isInitialIsFinal[0] || isInitialIsFinal[1]) {
             cleanLine = cleanLine.replaceAll("\\*", "").replaceAll("\\>", "");
